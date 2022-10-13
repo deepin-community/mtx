@@ -1,0 +1,26 @@
+Description: Fix manpage quotation found by lintian
+Author: Carsten Leonhardt <leo@debian.org>
+Last-Update: 2020-10-31
+
+An apostrophe at the beginning of the line is a command for (g)roff,
+so it must be either escaped or moved away from the beginning of the
+line to have a real apostrophe. The sequence \' doesn't stand for an
+apostrophe, however, but an acute accent. There are escaped sequences
+for an apostrophe, but they don't seem to be portable. Therefore, the
+easiest solution is to move the apostrophe away from the beginning of
+the line.
+
+
+--- a/scsitape.1
++++ b/scsitape.1
+@@ -162,8 +162,8 @@
+ attempt to intermingle scsitape commands with native tape driver
+ operations. Note that BRU 16.1 for Solaris (and possibly others, but
+ Solaris I know about) will have a 'scsi' keyword to bypass the 
+-native tape driver and write via direct uscsi commands, so if you use
+-\'scsitape\' to bypass the flaws of the native Solaris driver, you can use
++native tape driver and write via direct uscsi commands, so if you
++use 'scsitape' to bypass the flaws of the native Solaris driver, you can use
+ BRU 16.1 to write your actual tape archives. (Assuming that BRU 16.1
+ has been released at the time that you read this). 
+ 

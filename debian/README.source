@@ -1,0 +1,14 @@
+The package is based on the last release of mtx on sourceforge:
+https://sourceforge.net/projects/mtx/ with patches added from other
+sources, including other distributions. Here are some links to the
+packaging of mtx in other distributions/operating systems:
+
+Fedora: https://src.fedoraproject.org/rpms/mtx/tree/master
+Gentoo: https://gitweb.gentoo.org/repo/gentoo.git/tree/sys-block/mtx
+FreeBSD: https://www.freshports.org/misc/mtx/
+
+There might appear some kind of new upstream here:
+https://github.com/zombielinux/MTX
+
+The TapeChanger::MTX in contrib is outdated, a newer version can be
+found at https://www.ks.uiuc.edu/Development/MDTools/tapechanger-mtx/

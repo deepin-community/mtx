@@ -1,0 +1,3 @@
+version=3
+opts="pgpmode=auto, dversionmangle=s/~debian$//" \
+http://sf.net/mtx/mtx-([0-9\.]+)\.tar\.gz

@@ -1,0 +1,30 @@
+Author: Dan Horák <dan@danny.cz>
+Description: remove the weird debugging-like info
+ The loaderinfo and tapeinfo utilities print a debugging-like
+ information about the number of arguments on command line when
+ started with wrong number of arguments.
+ .
+ This patch is taken from Fedora:
+ https://src.fedoraproject.org/rpms/mtx/tree/master
+Date: Thu, 19 Nov 2009 15:45:54 +0100
+
+--- a/loaderinfo.c
++++ b/loaderinfo.c
+@@ -488,7 +488,6 @@
+ 	argv0=argv[0];
+ 	if (argc != 3)
+ 	{
+-		fprintf(stderr,"argc=%d",argc);
+ 		usage();
+ 	}
+ 
+--- a/tapeinfo.c
++++ b/tapeinfo.c
+@@ -933,7 +933,6 @@
+ 
+ 	if (argc != 3)
+ 	{
+-		fprintf(stderr,"argc=%d",argc);
+ 		usage();
+ 	}
+ 

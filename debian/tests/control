@@ -1,0 +1,7 @@
+# Only simple tests are possible because these programs depend on a
+# (hardware) tape drive
+
+# Test if the programs run at all and print expected output
+Tests: call-programs
+Restrictions: superficial needs-root
+Depends: mtx

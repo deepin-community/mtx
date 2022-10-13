@@ -1,0 +1,8 @@
+001-bug728142_many_slots.patch
+002-fix-configure-for-autoreconf
+003-fix-spelling
+004-fix-destdir
+005-remove-argc-output
+006-fix-quotation-in-manpage
+007-man-Document-mtx-eject-and-previous-operations
+008-fix-scsitape-usage-message

@@ -1,0 +1,25 @@
+Description: Fix spelling errors found by lintian
+Author: Carsten Leonhardt <leo@debian.org>
+Last-Update: 2019-02-28
+--- a/loaderinfo.1
++++ b/loaderinfo.1
+@@ -55,7 +55,7 @@
+ .B Inquiry Page
+ Aside from the normal inquiry info, will also print out whether we have
+ a bar code reader (for loaders that support the Exabyte extension for
+-reporting presense of said reader). 
++reporting presence of said reader). 
+ 
+ 
+ .SH OPTIONS
+--- a/scsitape.1
++++ b/scsitape.1
+@@ -97,7 +97,7 @@
+ block mode, <blocksize> should be zero (note: The maximum block size
+ we currently support in variable block mode is 128K, MAX_READ_SIZE will
+ need to be turned into a settable variable to allow bigger reads). If
+-<blocksize> is ommitted, we assume that we're in variable block mode, and
++<blocksize> is omitted, we assume that we're in variable block mode, and
+ that we are going to read from tape until we hit a tapemark or end of
+ partition or end of tape. 
+ 

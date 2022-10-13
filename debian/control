@@ -1,0 +1,21 @@
+Source: mtx
+Section: admin
+Priority: optional
+Maintainer: Debian Bacula Team <pkg-bacula-devel@lists.alioth.debian.org>
+Uploaders: Carsten Leonhardt <leo@debian.org>
+Build-Depends: debhelper-compat (= 13), libcam-dev [kfreebsd-any]
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
+Vcs-Browser: https://salsa.debian.org/bacula-team/mtx
+Vcs-Git: https://salsa.debian.org/bacula-team/mtx.git
+Homepage: https://sourceforge.net/projects/mtx/
+
+Package: mtx
+# does not build on hurd: see http://bugs.debian.org/677616
+Architecture: linux-any kfreebsd-any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: controls autoloaders and tape libraries
+ MTX can be used to manipulate autoloaders and tape libraries, such as
+ loading, unloading and switching tapes automatically. This is
+ necessary glue for using backup software like Amanda or Bacula
+ together with these devices.

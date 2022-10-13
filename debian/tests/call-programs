@@ -1,0 +1,17 @@
+#/bin/sh
+
+# Test for correct output when calling the programs
+
+set -e
+
+echo "Print mtx version:"
+mtx --version 2>&1 | grep "mtx version" && echo "... ok"
+echo ""
+
+PROGRAMS="loaderinfo scsieject scsitape tapeinfo"
+
+for p in $PROGRAMS; do
+	echo "Print $p usage:"
+	$p --nonsense 2>&1 | grep "Usage: $p" && echo "... ok"
+	echo ""
+done
